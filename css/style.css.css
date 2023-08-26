@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-width {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ============ Countdown Styling ============= */
+.countdown {
+    background-color: #fff4ec;
+    padding: 72px 0;
+}
+
+.countdown__header {
+    text-align: center;
+}
+
+.countdown__header-title.expired {
+    color: #aa131a;
+}
+
+.countdown__header-text {
+}
+
+/* ---- Timer ------ */
+.countdown__timer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.countdown__timer-item {
+    text-align: center;
+}
+
+.countdown__timer-remain {
+    font-size: 40px;
+    color: #ff7c24;
+}
+
+.countdown__timer-space {
+    transform: translateY(-1px);
+    font-size: 40px;
+    color: #ff7c24;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 10px;
+}
+
+/* ---- Discount ------ */
+.countdown__discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown__discount-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.countdown__discount-code {
+    background-color: #fff;
+    border: 1px dashed #000;
+    border-radius: 5px;
+    padding: 6px 24px;
+    margin-right: 5px;
+}
+
+.countdown__discount-btn {
+    background-color: #349d92;
+    border: 1px solid #349d92;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 24px;
+}
+
+.countdown__discount-btn:disabled {
+    cursor: not-allowed !important;
+}
+
+.countdown__discount-btn span {
+    display: inline-block;
+}
+
+.countdown__discount-btn span:last-child {
+    display: none;
+}
+
+.countdown__discount-btn.copied span:first-child {
+    display: none;
+}
+
+.countdown__discount-btn.copied span:last-child {
+    display: inline-block;
+}
+
+/* ---- Benefit ------ */
+.countdown__benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.countdown__benefit-item {
+    display: flex;
+    align-items: center;
+}
+
+.countdown__benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.countdown__benefit-icon svg {
+    max-width: 16px;
+    fill: #ff7c24;
+}
